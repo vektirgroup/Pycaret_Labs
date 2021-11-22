@@ -5,21 +5,18 @@ import numpy as np
 
 
 # Sidebar section ==============
-st.sidebar.title('-------- Vektir Labs --------')
-st.sidebar.header('Pycaret tutorial series')
+st.sidebar.title('Vektir Labs')
+st.sidebar.header('Pycaret Tutorial Series - Lab #1')
 st.sidebar.write('''
                  This series of labs will be based on the Pycaret python 
                  library. We assume you will have at least basic knowledge
                  of Python and have a will to learn!
                  ''')
-# TODO: expander not working
-with st.expander('Reference Info'):
-    st.write('''test''')
-    st.sidebar.markdown(' - [Pycaret Github](https://github.com/pycaret/pycaret)')
-    st.sidebar.markdown('  - [Pycaret Website](https://pycaret.org/)')
-    st.sidebar.markdown('  - [Moez Ali](https://github.com/moezali1?tab=overview&from=2021-11-01&to=2021-11-22)')
+with st.sidebar.expander('Reference Links'):
+    st.markdown(' - [Pycaret Github](https://github.com/pycaret/pycaret)')
+    st.markdown('  - [Pycaret Website](https://pycaret.org/)')
+    st.markdown('  - [Moez Ali](https://github.com/moezali1?tab=overview&from=2021-11-01&to=2021-11-22)')
 
-st.expander()
 # Main image ============
 st.image('../assets/PyCaret_Header.png',caption='pycaret.org')
 
